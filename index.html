@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .card {
+        width: 190px;
+        height: 254px;
+        background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+        border-radius: 20px;
+        transition: all 0.3s;
+      }
+
+      .card2 {
+        width: 190px;
+        height: 254px;
+        background-color: #1a1a1a;
+        border-radius: 0%;
+        transition: all 0.2s;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        line-height: 22px;
+      }
+
+      .card2:hover {
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+      }
+
+      .card:hover {
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+      }
+      #possibleAnswers {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      #quizContainer {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-around;
+      }
+      #questionBox {
+        display: flex;
+        justify-content: center;
+      }
+      #questionDiv {
+        width: 60%;
+        height: 12vh;
+        background-color: #1a1a1a;
+        border-radius: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #theQuestion {
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        background-color: #1a1a1a;
+      }
+      header h1 {
+        font-size: 35px;
+        font-weight: 720;
+        color: white;
+      }
+      #btnDiv {
+        display: flex;
+        justify-content: center;
+      }
+      #sumbitAnswer {
+        color: #ecf0f1;
+        font-size: 17px;
+        background-color: #22e6bf;
+        border: 1px solid #12f3d9;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 6px 0px #00b7d3;
+        transition: all 0.1s;
+      }
+      #sumbitAnswer:active {
+        box-shadow: 0px 2px 0px #00b7d3;
+        position: relative;
+        top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to your quiz site</h1>
+    </header>
+    <div id="container">
+      <div id="quizContainer">
+        <section id="questionBox">
+          <div id="questionDiv">
+            <p id="theQuestion"></p>
+          </div>
+        </section>
+        <section id="possibleAnswers">
+          <div class="card">
+            <div class="card2" id="choice1"></div>
+          </div>
+          <div class="card">
+            <div class="card2" id="choice2"></div>
+          </div>
+          <div class="card">
+            <div class="card2" id="choice3"></div>
+          </div>
+          <div class="card">
+            <div class="card2" id="choice4"></div>
+          </div>
+        </section>
+        <div id="btnDiv"><button id="sumbitAnswer">Sumbit answer</button></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
