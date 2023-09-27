@@ -53,13 +53,14 @@
         width: 60%;
         height: 12vh;
         background-color: #1a1a1a;
-        border-radius: 13px;
+        border-radius: 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       #theQuestion {
-        font-size: 40px;
+        margin: 3vh 0 3vh 0;
+        font-size: 1.5vw;
         color: white;
         font-weight: 700;
       }
@@ -69,7 +70,7 @@
         background-color: #1a1a1a;
       }
       header h1 {
-        font-size: 35px;
+        font-size: 2vw;
         font-weight: 720;
         color: white;
       }
@@ -79,11 +80,11 @@
       }
       #sumbitAnswer {
         color: #ecf0f1;
-        font-size: 17px;
+        font-size: 1.5vw;
         background-color: #22e6bf;
         border: 1px solid #12f3d9;
         border-radius: 5px;
-        padding: 10px;
+        padding: 1vh;
         box-shadow: 0px 6px 0px #00b7d3;
         transition: all 0.1s;
       }
@@ -91,6 +92,27 @@
         box-shadow: 0px 2px 0px #00b7d3;
         position: relative;
         top: 2px;
+      }
+      #numberOfQuestionSection {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #numberOfQuestionBox {
+        background-color: #1a1a1a;
+        width: 15vw;
+        height: 55px;
+        border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #numberOfQuestion,
+      #numberOfCorrectAnswers {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        font-weight: 700;
       }
     </style>
   </head>
@@ -103,6 +125,14 @@
         <section id="questionBox">
           <div id="questionDiv">
             <p id="theQuestion"></p>
+          </div>
+        </section>
+        <section id="numberOfQuestionSection">
+          <div id="numberOfQuestionBox">
+            <p id="numberOfQuestion"></p>
+          </div>
+          <div id="numberOfQuestionBox">
+            <p id="numberOfCorrectAnswers"></p>
           </div>
         </section>
         <section id="possibleAnswers">
